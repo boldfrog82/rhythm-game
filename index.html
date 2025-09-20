@@ -2,11 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+codex/create-web-project-skeleton-for-rhythm-game
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+main
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rhythm Game</title>
   </head>
   <body>
+codex/create-web-project-skeleton-for-rhythm-game
+    <section id="mini-game">
+      <div class="mini-hud">
+        <div class="mini-stat">Score: <span data-role="score">0</span></div>
+        <div class="mini-stat">Combo: <span data-role="combo">0</span></div>
+        <div class="mini-feedback" data-role="feedback">READY</div>
+      </div>
+      <div id="lanes">
+        <div class="lane" data-lane="0">
+          <div class="lane__notes"></div>
+          <button class="hit-btn" type="button">A</button>
+        </div>
+        <div class="lane" data-lane="1">
+          <div class="lane__notes"></div>
+          <button class="hit-btn" type="button">S</button>
+        </div>
+        <div class="lane" data-lane="2">
+          <div class="lane__notes"></div>
+          <button class="hit-btn" type="button">K</button>
+        </div>
+        <div class="lane" data-lane="3">
+          <div class="lane__notes"></div>
+          <button class="hit-btn" type="button">L</button>
+        </div>
+      </div>
+      <div class="mini-controls">
+        <button id="mini-start" type="button">Start</button>
+        <button id="mini-reset" type="button">Reset</button>
+      </div>
+    </section>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/simple-game.js"></script>
+
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+main
   </body>
 </html>
