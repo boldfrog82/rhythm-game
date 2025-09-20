@@ -1,6 +1,12 @@
+codex/create-web-project-skeleton-for-rhythm-game
+import { getLatencyMs } from "../audio/index.js";
+import { getNotesByLane, hitWindowMs } from "../chart/engine.js";
+import { applyJudgement } from "./state.js";
+
 import { getLatencyMs } from "../audio";
 import { getNotesByLane, hitWindowMs } from "../chart/engine";
 import { applyJudgement } from "./state";
+main
 
 const AUTO_MISS_GRACE_SEC = 0.12;
 

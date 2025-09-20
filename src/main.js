@@ -7,20 +7,34 @@ import {
   getTimeSec,
   isRunning,
   getLatencyMs,
+codex/create-web-project-skeleton-for-rhythm-game
+} from "./audio/index.js";
+import { startLatencyCalibration } from "./latency/calibrate.js";
+import { createCanvasRenderer } from "./ui/canvas.js";
+import { createHud } from "./ui/hud.js";
+import { initInput } from "./game/input.js";
+
 } from "./audio";
 import { startLatencyCalibration } from "./latency/calibrate";
 codex/create-web-project-skeleton-for-rhythm-game
 import { createCanvasRenderer } from "./ui/canvas";
 import { createHud } from "./ui/hud";
 import { initInput } from "./game/input";
+main
 import {
   loadChart,
   getLaneCount,
   getNotes,
   resetChartState,
+codex/create-web-project-skeleton-for-rhythm-game
+} from "./chart/engine.js";
+import { resetState, getStateSnapshot } from "./game/state.js";
+import { resetJudging, updateAutoMisses } from "./game/judge.js";
+
 } from "./chart/engine";
 import { resetState, getStateSnapshot } from "./game/state";
 import { resetJudging, updateAutoMisses } from "./game/judge";
+main
 
 const app = document.querySelector("#app");
 
@@ -148,6 +162,8 @@ async function handleCalibrate() {
 }
 
 function setupSpacebarTap() {
+codex/create-web-project-skeleton-for-rhythm-game
+
 
 
 const app = document.querySelector("#app");
@@ -306,6 +322,7 @@ async function bootstrap() {
   tapButton.addEventListener("click", handleTap);
 
 main
+main
   window.addEventListener("keydown", (event) => {
     if (event.code === "Space" || event.key === " ") {
       if (calibrationSession) {
@@ -317,6 +334,9 @@ main
 }
 
 codex/create-web-project-skeleton-for-rhythm-game
+
+codex/create-web-project-skeleton-for-rhythm-game
+main
 function gameLoop() {
   const nowSec = getTimeSec();
   handleAutoMisses(nowSec);
@@ -368,6 +388,9 @@ window.addEventListener("beforeunload", () => {
   cleanupInput?.();
 });
 
+codex/create-web-project-skeleton-for-rhythm-game
+
 
 bootstrap();
+main
 main

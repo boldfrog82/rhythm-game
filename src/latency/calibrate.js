@@ -1,4 +1,8 @@
+codex/create-web-project-skeleton-for-rhythm-game
+import { getAudioContext } from "../audio/transport.js";
+
 import { getAudioContext } from "../audio/transport";
+main
 
 const STORAGE_KEY = "userLatencyMs";
 const DEFAULT_TAPS = 8;
