@@ -1,12 +1,17 @@
 :root {
+codex/create-web-project-skeleton-for-rhythm-game-x1wpp6
+
 codex/create-web-project-skeleton-for-rhythm-game
 
 codex/create-web-project-skeleton-for-rhythm-game
+main
 main
   color-scheme: dark;
   font-family: "Segoe UI", "Roboto", sans-serif;
   background-color: #060714;
   color: #f3f6ff;
+codex/create-web-project-skeleton-for-rhythm-game-x1wpp6
+
 codex/create-web-project-skeleton-for-rhythm-game
 
 
@@ -14,14 +19,18 @@ codex/create-web-project-skeleton-for-rhythm-game
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 main
 main
+main
 }
 
 body {
   margin: 0;
   min-height: 100vh;
+codex/create-web-project-skeleton-for-rhythm-game-x1wpp6
+
 codex/create-web-project-skeleton-for-rhythm-game
 
 codex/create-web-project-skeleton-for-rhythm-game
+main
 main
   background: radial-gradient(circle at top, #1d1f4f 0%, #060714 60%, #03040c 100%);
   display: flex;
@@ -89,6 +98,8 @@ main
 }
 
 .hud__controls {
+codex/create-web-project-skeleton-for-rhythm-game-x1wpp6
+
 codex/create-web-project-skeleton-for-rhythm-game
 
 
@@ -145,6 +156,7 @@ codex/create-web-project-skeleton-for-rhythm-game
 .button-row {
 main
 main
+main
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
@@ -154,9 +166,12 @@ button {
   appearance: none;
   border: none;
   border-radius: 999px;
+codex/create-web-project-skeleton-for-rhythm-game-x1wpp6
+
 codex/create-web-project-skeleton-for-rhythm-game
 
 codex/create-web-project-skeleton-for-rhythm-game
+main
 main
   padding: 0.6rem 1.4rem;
   font-weight: 600;
@@ -164,6 +179,8 @@ main
   text-transform: uppercase;
   background: linear-gradient(135deg, #5f7bff, #a855f7);
   color: #f8f9ff;
+codex/create-web-project-skeleton-for-rhythm-game-x1wpp6
+
 codex/create-web-project-skeleton-for-rhythm-game
 
 
@@ -175,12 +192,16 @@ codex/create-web-project-skeleton-for-rhythm-game
   color: #f7f8ff;
 main
 main
+main
   cursor: pointer;
   transition: transform 120ms ease, box-shadow 120ms ease, opacity 120ms ease;
 }
 
 button:hover:not(:disabled) {
   transform: translateY(-1px);
+codex/create-web-project-skeleton-for-rhythm-game-x1wpp6
+  box-shadow: 0 12px 28px rgba(88, 123, 255, 0.35);
+
 codex/create-web-project-skeleton-for-rhythm-game
   box-shadow: 0 12px 28px rgba(88, 123, 255, 0.35);
 
@@ -188,6 +209,7 @@ codex/create-web-project-skeleton-for-rhythm-game
   box-shadow: 0 12px 28px rgba(88, 123, 255, 0.35);
 
   box-shadow: 0 12px 24px rgba(87, 104, 255, 0.35);
+main
 main
 main
 }
@@ -202,9 +224,12 @@ button:disabled {
   box-shadow: none;
 }
 
+codex/create-web-project-skeleton-for-rhythm-game-x1wpp6
+
 codex/create-web-project-skeleton-for-rhythm-game
 
 codex/create-web-project-skeleton-for-rhythm-game
+main
 main
 .hud__tap {
   background: linear-gradient(135deg, #f97316, #ef4444);
@@ -439,6 +464,8 @@ main
   }
 }
 
+codex/create-web-project-skeleton-for-rhythm-game-x1wpp6
+
 codex/create-web-project-skeleton-for-rhythm-game
 
 
@@ -483,5 +510,6 @@ code {
     width: 100%;
   }
 }
+main
 main
 main

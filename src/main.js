@@ -1,4 +1,7 @@
 import "./styles/main.css";
+codex/create-web-project-skeleton-for-rhythm-game-x1wpp6
+import "./simple-game.js";
+
 import {
   load,
   start,
@@ -392,5 +395,6 @@ codex/create-web-project-skeleton-for-rhythm-game
 
 
 bootstrap();
+main
 main
 main
