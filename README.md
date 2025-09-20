@@ -1,6 +1,11 @@
 # rhythm-game
 Web rhythm game: hit notes in time with music
 
+## Development
+- Install dependencies with `npm install`.
+- Run `npm run dev` to start the Vite dev server.
+- Run `npm run build` to create a production build, and `npm run preview` to serve the built output locally.
+
 ## Demo assets
 - Static files in the `public` directory are served directly by Vite. The demo tone lives at `/audio/demo.mp3`,
   and `scripts/generate-demo-audio.js` writes it from an embedded Base64 payload before each dev server or build
