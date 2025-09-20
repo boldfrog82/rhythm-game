@@ -1,0 +1,17 @@
+{
+  "name": "rhythm-game",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "predev": "node scripts/generate-demo-audio.js",
+    "prebuild": "node scripts/generate-demo-audio.js",
+    "prepreview": "node scripts/generate-demo-audio.js",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
