@@ -1,5 +1,8 @@
 import "./styles/main.css";
+ codex/create-web-project-skeleton-for-rhythm-game-dd6gmi
+
 codex/create-web-project-skeleton-for-rhythm-game-ilfq4m
+ main
 import "./simple-game.js";
 
 import {
@@ -9,6 +12,11 @@ import {
   stop as stopAudio,
   getTimeSec,
   isRunning,
+ codex/create-web-project-skeleton-for-rhythm-game-dd6gmi
+  getLatencyMs
+} from "./audio/index.js";
+import { startLatencyCalibration } from "./latency/calibrate.js";
+
   getLatencyMs,
 } from "./audio/index.js";
 import { startLatencyCalibration } from "./latency/calibrate.js";
@@ -39,12 +47,17 @@ import { createHud } from "./ui/hud";
 import { initInput } from "./game/input";
 main
 main
+ main
 import {
   loadChart,
   getLaneCount,
   getNotes,
+ codex/create-web-project-skeleton-for-rhythm-game-dd6gmi
+  resetChartState
+
   resetChartState,
 codex/create-web-project-skeleton-for-rhythm-game-ilfq4m
+ main
 } from "./chart/engine.js";
 import { createCanvasRenderer } from "./ui/canvas.js";
 import { createHud } from "./ui/hud.js";
@@ -134,6 +147,8 @@ function ensureAnimationLoop() {
   };
 
   animationFrameId = window.requestAnimationFrame(step);
+ codex/create-web-project-skeleton-for-rhythm-game-dd6gmi
+
 
 codex/create-web-project-skeleton-for-rhythm-game
 } from "./chart/engine.js";
@@ -164,6 +179,7 @@ function resetGameState() {
   updateHudStats();
   hud.setJudgementMessage("Press Start to play the demo chart.");
 main
+ main
 }
 
 function handleJudgement(result) {
@@ -171,7 +187,10 @@ function handleJudgement(result) {
     return;
   }
 
+ codex/create-web-project-skeleton-for-rhythm-game-dd6gmi
+
 codex/create-web-project-skeleton-for-rhythm-game-ilfq4m
+ main
   if (canvasRenderer) {
     canvasRenderer.registerHitEffect(result.note.lane, result.judgement, result.timeSec);
   }
@@ -209,6 +228,8 @@ async function handleStart() {
   } catch (error) {
     console.error("Failed to start transport", error);
     hud.setJudgementMessage("Unable to start audio playback.");
+ codex/create-web-project-skeleton-for-rhythm-game-dd6gmi
+
 
   const state = getStateSnapshot();
   hud.updateStats(state);
@@ -224,11 +245,15 @@ async function handleStart() {
   } catch (error) {
     hud.setJudgementMessage(`Start failed: ${error?.message ?? error}`);
 main
+ main
   }
 }
 
 function handlePause() {
+ codex/create-web-project-skeleton-for-rhythm-game-dd6gmi
+
 codex/create-web-project-skeleton-for-rhythm-game-ilfq4m
+ main
   pauseAudio();
   disableInput();
   const nowSec = getTimeSec();
@@ -269,6 +294,8 @@ function handleCalibrationTap() {
   const clamped = Math.min(taps, total);
   hud.setCalibrationStatus(`Tap in time with the clicks (${clamped}/${total})`);
   hud.setTapLabel(`Tap (Space) ${clamped}/${total}`);
+ codex/create-web-project-skeleton-for-rhythm-game-dd6gmi
+
 
   pause();
   hud.setTransportState(false);
@@ -308,17 +335,26 @@ function handleTap() {
     hud.setCalibrationActive(false);
   }
 main
+ main
 }
 
 async function handleCalibrate() {
   if (calibrationSession) {
+ codex/create-web-project-skeleton-for-rhythm-game-dd6gmi
+
 codex/create-web-project-skeleton-for-rhythm-game-ilfq4m
+ main
     calibrationSession.cancel();
     return;
   }
 
   hud.setCalibrationStatus("Preparing calibration…");
   hud.setCalibrateButtonDisabled(true);
+
+ codex/create-web-project-skeleton-for-rhythm-game-dd6gmi
+  try {
+    const session = await startLatencyCalibration();
+    calibrationSession = session;
 
     return;
   }
@@ -333,6 +369,7 @@ main
     const session = await startLatencyCalibration();
     calibrationSession = session;
 codex/create-web-project-skeleton-for-rhythm-game-ilfq4m
+ main
     hud.setCalibrateButtonDisabled(false);
     hud.setCalibrateButtonLabel("Cancel Calibration");
     hud.setTapLabel(`Tap (Space) 0/${session.tapsRequired}`);
@@ -401,6 +438,8 @@ window.addEventListener("beforeunload", () => {
     }
   }
 });
+ codex/create-web-project-skeleton-for-rhythm-game-dd6gmi
+
 
     hud.setCalibrationStatus(
       `Tap along with ${session.tapsRequired} ticks (space bar or Tap button).`
@@ -668,3 +707,4 @@ main
 main
 main
 main
+ main

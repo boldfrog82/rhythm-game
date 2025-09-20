@@ -1,3 +1,7 @@
+ codex/create-web-project-skeleton-for-rhythm-game-dd6gmi
+export { load, start, pause, stop, getTimeSec, isRunning } from "./transport.js";
+export { getLatencyMs } from "../latency/calibrate.js";
+
 codex/create-web-project-skeleton-for-rhythm-game-ilfq4m
 export { load, start, pause, stop, getTimeSec, isRunning } from "./transport.js";
 export { getLatencyMs } from "../latency/calibrate.js";
@@ -15,3 +19,4 @@ export { getLatencyMs } from "../latency/calibrate";
 main
 main
 main
+ main
