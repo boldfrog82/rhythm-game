@@ -9,7 +9,7 @@ import {
   stop as stopAudio,
   getTimeSec,
   isRunning,
-  getLatencyMs,
+  getLatencyMs
 } from "./audio/index.js";
 import { startLatencyCalibration } from "./latency/calibrate.js";
 
