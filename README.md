@@ -1,6 +1,12 @@
 # rhythm-game
 Web rhythm game: hit notes in time with music
 
+## Mini Rhythm Game
+- The landing page includes a self-contained four-lane "Mini Rhythm Game" demo that you can play instantly.
+- Use the on-screen lane buttons or the **A / S / K / L** keys to hit the falling notes while the metronome clicks.
+- Score, combo, and judgement feedback appear above the lanes, and you can restart the mini-game without
+  affecting the full canvas renderer.
+
 ## Development
 - Install dependencies with `npm install`.
 - Run `npm run dev` to start the Vite dev server.
