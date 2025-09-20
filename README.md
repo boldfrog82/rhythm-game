@@ -1,6 +1,7 @@
 # rhythm-game
 Web rhythm game: hit notes in time with music
 
+codex/create-web-project-skeleton-for-rhythm-game
 ## Mini Rhythm Game
 - The landing page includes a self-contained four-lane "Mini Rhythm Game" demo that you can play instantly.
 - Use the on-screen lane buttons or the **A / S / K / L** keys to hit the falling notes while the metronome clicks.
@@ -12,12 +13,15 @@ Web rhythm game: hit notes in time with music
 - Run `npm run dev` to start the Vite dev server.
 - Run `npm run build` to create a production build, and `npm run preview` to serve the built output locally.
 
+
+main
 ## Demo assets
 - Static files in the `public` directory are served directly by Vite. The demo tone lives at `/audio/demo.mp3`,
   and `scripts/generate-demo-audio.js` writes it from an embedded Base64 payload before each dev server or build
   so the binary asset stays out of source control while still being copied verbatim into the production bundle.
 - Sample charts live under `src/chart`. Add new beatmaps there using valid JSON to have them bundled with the app source.
 
+odex/create-web-project-skeleton-for-rhythm-game
 ## Controls
 - **Gameplay lanes:** press **A / S / K / L** to hit the four columns.
 - **Transport:** use the Start, Pause, and Reset buttons in the HUD to control playback.
@@ -29,6 +33,8 @@ Judgement windows (symmetric around the note time, after subtracting your saved 
 - Good ≤ 110 ms
 - Miss > 110 ms
 
+
+ain
 ## Timing & Latency
 - Gameplay timing is driven entirely by the Web Audio clock (`AudioContext.currentTime`). The transport in
   `src/audio/transport.js` controls playback for the built-in demo track and is the single source of truth
@@ -36,8 +42,15 @@ Judgement windows (symmetric around the note time, after subtracting your saved 
 - When you add new audio, drop the files in `public/audio` (or any subdirectory inside `public`). Reference
   them by URL (for example, `/audio/my-track.ogg`) so Vite serves them at the root path and copies them to
   `dist/` unchanged during builds.
+codex/create-web-project-skeleton-for-rhythm-game
 - To calibrate latency, open the app, press **Latency Calibration**, then tap the **Tap (Space)** button (or press the
   space bar) in time with the metronome clicks. After eight taps the app stores the median offset in
   `localStorage` under `userLatencyMs`, and the helpers in `src/latency/calibrate.js` expose it to the rest of
   the game.
 
+
+- To calibrate latency, open the app, press **Start calibration**, then tap the **Tap** button (or press the
+  space bar) in time with the metronome clicks. After eight taps the app stores the median offset in
+  `localStorage` under `userLatencyMs`, and the helpers in `src/latency/calibrate.js` expose it to the rest of
+  the game.
+main
