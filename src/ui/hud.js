@@ -93,8 +93,18 @@ export function createHud(handlers) {
   return {
     root,
     canvasHost,
+codex/create-web-project-skeleton-for-rhythm-game-ilfq4m
+    setTransportState(running, timeSec) {
+      const label = running ? "running" : "paused";
+      if (typeof timeSec === "number" && Number.isFinite(timeSec)) {
+        transportEl.textContent = `${label} (${timeSec.toFixed(2)}s)`;
+      } else {
+        transportEl.textContent = label;
+      }
+
     setTransportState(running) {
       transportEl.textContent = running ? "running" : "paused";
+main
     },
     updateLatency(latencyMs) {
       latencyEl.textContent = latencyMs.toFixed(2);

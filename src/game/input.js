@@ -1,3 +1,8 @@
+codex/create-web-project-skeleton-for-rhythm-game-ilfq4m
+import { getTimeSec } from "../audio/index.js";
+import { judgeHit } from "./judge.js";
+
+
 codex/create-web-project-skeleton-for-rhythm-game-x1wpp6
 import { getTimeSec } from "../audio/index.js";
 import { judgeHit } from "./judge.js";
@@ -11,6 +16,7 @@ import { getTimeSec } from "../audio";
 import { judgeHit } from "./judge";
 main
 
+main
 main
 const KEY_TO_LANE = {
   KeyA: 0,

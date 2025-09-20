@@ -1,3 +1,7 @@
+codex/create-web-project-skeleton-for-rhythm-game-ilfq4m
+import { approachSec } from "../chart/engine.js";
+
+
 codex/create-web-project-skeleton-for-rhythm-game-x1wpp6
 import { approachSec } from "../chart/engine.js";
 
@@ -8,6 +12,7 @@ import { approachSec } from "../chart/engine.js";
 import { approachSec } from "../chart/engine";
 main
 
+main
 main
 const HIT_LINE_RATIO = 0.85;
 const APPROACH_DISTANCE_RATIO = 0.7;
